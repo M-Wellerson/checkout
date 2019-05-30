@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meus Dados</title>
+    <link rel="stylesheet" href="disc/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div><img src="disc/ico/left-arrow.png"></div>
+            <div><img src="disc/img/logo-upsite.png"></div>
+            <div class="header__menu__user">
+                <img src="disc/ico/Prancheta 21 cópia 13.png">
+                <div>
+                    <span>Olá, Marcos! Seja bem-vindo.</span>
+                    <div>
+                        <a href=""><img class="menu__user_icon" src="disc/ico/Prancheta 21 cópia 21.png">Editar meus
+                            dados</a>
+                        <a href=""><img class="menu__user_icon" src="disc/ico/Prancheta 21 cópia 17.png">Sair</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="perfil">
+        <div class="menu__perfil">
+            <div class="menu__perfil__header">
+                <img src="disc/img/card.png" alt="">
+                <div>
+                    <span>Olá, <strong>Marcos!</strong></span>
+                    <span>Seja Bem-Vindo ao Upsite.</span>
+                </div>
+            </div>
+            <div class="menu__perfil__opcao">
+                <a href=""><img src="disc/ico/Prancheta 21 cópia 3.png"><span>Minha Conta</span></a>
+                <a href=""><img src="disc/ico/Prancheta 21 cópia 3.png"><span>Alterar Senha</span></a>
+                <a href=""><img src="disc/ico/Prancheta 21 cópia 3.png"><span>Meus Pedidos</span></a>
+                <a href=""><img src="disc/ico/Prancheta 21 cópia 3.png"><span>Lista de Desejos</span></a>
+                <a href=""><img src="disc/ico/Prancheta 21 cópia 3.png"><span>Sair</span></a>
+            </div>
+        </div>
+        <div class="meus_dados">
+            <h2>Meus Dados</h2>
+            <div class="login__pessoa_juridica" id="aba2">
+                <label for="abas1_dados">Pessoa Fisíca</label>
+                <label for="abas2_dados">Pessoa Jurídica</label>
+
+                <div class="abas__inner">
+                    <input type="radio" name="dadospessoais" id="abas1_dados" checked hidden>
+                    <div>
+                        <form action="" class="form form__cadastro_abas">
+                            <div>
+                                <label for="email">Nome completo:(Obrigatorio)</label>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <label for="password">CPF:(Obrigatorio)</label>
+                                <input type="password">
+                            </div>
+                            <div class="cadastro__telefone">
+                                <div>
+                                    <label for="">DD</label>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <label for="">Celular:(Obrigatorio)</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="cadastro__telefone">
+                                <div>
+                                    <label for="">DD</label>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <label for="">Telefone Fixo:(Obrigatorio)</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="cadastro__data">
+                                <div>
+                                    <label for="">Data de Nascimento:(Obrigatorio)</label>
+                                    <input type="date">
+                                </div>
+                                <div>
+                                    <label for="">Sexo:(Obrigatorio)</label>
+                                    <select name="sexo" id="">
+                                        <option value="0">Masculino</option>
+                                        <option value="2">Feminino</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <input type="radio" name="dadospessoais" id="abas2_dados" hidden>
+                    <div>
+                        <form action="" class="form form__cadastro_abas">
+                            <div>
+                                <label for="password">CNPJ:(Obrigatorio)</label>
+                                <input type="password">
+                            </div>
+                            <div>
+                                <label for="email">Nome fantasia:(Obrigatorio)</label>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <label for="email">Nome:(Obrigatorio)</label>
+                                <input type="text">
+                            </div>
+                            <div class="cadastro__telefone">
+                                <div>
+                                    <label for="">DD</label>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <label for="">Celular:(Obrigatorio)</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="cadastro__telefone">
+                                <div>
+                                    <label for="">DD</label>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <label for="">Telefone Fixo:(Obrigatorio)</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="cadastro__data">
+                                <div>
+                                    <label for="">Data de Nascimento:(Obrigatorio)</label>
+                                    <input type="date">
+                                </div>
+                                <div>
+                                    <label for="">Sexo:(Obrigatorio)</label>
+                                    <select name="sexo" id="">
+                                        <option value="0">Masculino</option>
+                                        <option value="2">Feminino</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <a href="" class="btn__bombom btn__finalizar">Salvar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

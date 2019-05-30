@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="disc/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div><img src="disc/ico/left-arrow.png"></div>
+            <div><img src="disc/img/logo-upsite.png"></div>
+            <div class="header__menu__user">
+                <img src="disc/ico/Prancheta 21 cópia 13.png">
+                <div>
+                    <span>Olá, Marcos! Seja bem-vindo.</span>
+                    <div>
+                        <a href=""><img class="menu__user_icon" src="disc/ico/Prancheta 21 cópia 21.png">Editar meus
+                            dados</a>
+                        <a href=""><img class="menu__user_icon" src="disc/ico/Prancheta 21 cópia 17.png">Sair</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="etapas">
+        <div><img src="disc/ico/Prancheta 21 cópia 15.png"><span>Carrinho</span></div>
+        <div><img src="disc/ico/Prancheta 21 cópia 13.png"><span>Autentificação</span></div>
+        <div><img class="etapas__desativadas" src="disc/ico/Prancheta 21 cópia 3.png"><span>Pagamento</span></div>
+        <div><img class="etapas__desativadas" src="disc/ico/Prancheta 21 cópia.png"><span>Confirmação</span></div>
+    </section>
+
+    <section class="cadastro">
+        <div class="cadastro__inner">
+            <span>Criar nova Conta</span>
+            <div class="cadastro__dados__acesso">
+                <div>
+                    <h3>Dados de Acesso</h3>
+                    <form action="" class="form form__cadastro_acesso">
+                        <div>
+                            <label for="email">E-mail*</label>
+                            <input type="email">
+                        </div>
+                        <div>
+                            <label for="password">Senha*</label>
+                            <input type="password">
+                        </div>
+                        <div>
+                            <label for="">Confirmar Senha*</label>
+                            <input type="text">
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <div class="login__pessoa_juridica" id="aba2">
+                        <label for="abas1">Pessoa Fisíca</label>
+                        <label for="abas2">Pessoa Jurídica</label>
+
+                        <div class="abas__inner">
+                            <input type="radio" name="dadospessoais" id="abas1" checked hidden>
+                            <div>
+                                <form action="" class="form form__cadastro_abas">
+                                    <div>
+                                        <label for="email">Nome completo:(Obrigatorio)</label>
+                                        <input type="text">
+                                    </div>
+                                    <div>
+                                        <label for="password">CPF:(Obrigatorio)</label>
+                                        <input type="password">
+                                    </div>
+                                    <div class="cadastro__telefone">
+                                        <div>
+                                            <label for="">DD</label>
+                                            <input type="text">
+                                        </div>
+                                        <div>
+                                            <label for="">Celular:(Obrigatorio)</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="cadastro__telefone">
+                                        <div>
+                                            <label for="">DD</label>
+                                            <input type="text">
+                                        </div>
+                                        <div>
+                                            <label for="">Telefone Fixo:(Obrigatorio)</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="cadastro__data">
+                                        <div>
+                                            <label for="">Data de Nascimento:(Obrigatorio)</label>
+                                            <input type="date">
+                                        </div>
+                                        <div>
+                                            <label for="">Sexo:(Obrigatorio)</label>
+                                            <select name="sexo" id="">
+                                                <option value="0">Masculino</option>
+                                                <option value="2">Feminino</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <input type="radio" name="dadospessoais" id="abas2" hidden>
+                            <div>
+                                <form action="" class="form form__cadastro_abas">
+                                    <div>
+                                        <label for="password">CNPJ:(Obrigatorio)</label>
+                                        <input type="password">
+                                    </div>
+                                    <div>
+                                        <label for="email">Nome fantasia:(Obrigatorio)</label>
+                                        <input type="text">
+                                    </div>
+                                    <div>
+                                        <label for="email">Nome:(Obrigatorio)</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="cadastro__telefone">
+                                        <div>
+                                            <label for="">DD</label>
+                                            <input type="text">
+                                        </div>
+                                        <div>
+                                            <label for="">Celular:(Obrigatorio)</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="cadastro__telefone">
+                                        <div>
+                                            <label for="">DD</label>
+                                            <input type="text">
+                                        </div>
+                                        <div>
+                                            <label for="">Telefone Fixo:(Obrigatorio)</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="cadastro__data">
+                                        <div>
+                                            <label for="">Data de Nascimento:(Obrigatorio)</label>
+                                            <input type="date">
+                                        </div>
+                                        <div>
+                                            <label for="">Sexo:(Obrigatorio)</label>
+                                            <select name="sexo" id="">
+                                                <option value="0">Masculino</option>
+                                                <option value="2">Feminino</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span>Dados Pessoais</span>
+            <div class="cadastro__dados__endereco">
+                <h3>Endereço Principal</h3>
+                <form action="" class="form form__cadastro_endereco">
+                    <div>
+                        <label for="">CPF:(Obrigatorio)</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Endereço:(Obrigatorio)</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Número:(Obrigatorio)</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Complemento:(Obrigatorio)</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Refência:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Bairro:(Obrigatorio)</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Cidade:(Obrigatorio)</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Estado:(Obrigatorio)</label>
+                        <input type="text">
+                    </div>
+                </form>
+            </div>
+            <a href="" class="btn__bombom btn__cadastrar">Cadastra-se</a>
+        </div>
+    </section>
+
+</html>

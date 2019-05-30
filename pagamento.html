@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="disc/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div><img src="disc/ico/left-arrow.png"></div>
+            <div><img src="disc/img/logo-upsite.png"></div>
+            <div class="header__menu__user">
+                <img src="disc/ico/Prancheta 21 cópia 13.png">
+                <div>
+                    <span>Olá, Marcos! Seja bem-vindo.</span>
+                    <div>
+                        <a href=""><img class="menu__user_icon" src="disc/ico/Prancheta 21 cópia 21.png">Editar meus
+                            dados</a>
+                        <a href=""><img class="menu__user_icon" src="disc/ico/Prancheta 21 cópia 17.png">Sair</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="etapas">
+        <div><img src="disc/ico/Prancheta 21 cópia 15.png"><span>Carrinho</span></div>
+        <div><img src="disc/ico/Prancheta 21 cópia 13.png"><span>Autentificação</span></div>
+        <div><img src="disc/ico/Prancheta 21 cópia 3.png"><span>Pagamento</span></div>
+        <div><img class="etapas__desativadas" src="disc/ico/Prancheta 21 cópia.png"><span>Confirmação</span></div>
+    </section>
+
+    <section class="pagamento">
+        <div class="pagamentos__dados">
+            <div class="pagamento__dados__acesso">
+                <h2>Dados de acesso</h2>
+                <span>Marcos Wellerson Máximo Rodrigues</span>
+                <span>mw@gmail.com</span>
+                <span>(00) 0 0000-0000</span>
+                <div>
+                    <p>Avenida Whatever</p>
+                    <p>Taboré</p>
+                    <p>Antana da Whatever - SP</p>
+                    <p>00000-000</p>
+                </div>
+                <div class="pagamento__btn">
+                    <a href="">Não é você? Sair.</a>
+                    <a href="" class="btn__bombom">Alterar Endereço</a>
+                </div>
+            </div>
+            <div class="pagamento__dados__entrega">
+                <h2>Endereço/Entrego</h2>
+                <form action="">
+                    <div>
+                        <input type="radio" name="pac" value="pac1" id="pac1">
+                        <label for="pac1">PAC (6 dias úteis)</label>
+
+                    </div>
+                    <div>
+                        <input type="radio" value="pac2" name="pac" id="pac2">
+                        <label for="pac2">PAC (6 dias úteis)</label>
+                        <p>R$10,00</p>
+                    </div>
+                </form>
+                <div class="accordion">
+                    <input type="checkbox" name="collapse2" id="accordion__tile">
+                    <span class="title">
+                        <label for="accordion__tile">Retirar na loga</label>
+                        <label for="accordion__tile">R$16,00 ></label>
+                    </span>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, tempora?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagamento__metodo">
+            <div class="form pagamento__metodo__form">
+                <form action="">
+                    <input type="text">
+                    <input type="submit" class="btn__bombom btn__cupom" value="Aplicar Cupom">
+                </form>
+            </div>
+            <div class="pagamento__metodo__formas">
+                <div class="accordion">
+                    <input type="checkbox" name="collapse2" id="metado__tile">
+                    <span class="title title__pagamento">
+                        <label for="metado__tile">Métodos de Pagamento</label>
+                    </span>
+                    <div class="content">
+                        <div class="pagamento__checkout">
+                            <span>Selecione a forma de pagamento</span>
+                            <span>
+                                <label for="forma1">Cartão de Crédito</label>
+                                <label for="forma2">Boleto Bancário</label>
+                                <label for="forma3">Débito Online</label>
+                            </span>
+                            <input type="radio" name="pagamento" id="forma1" checked hidden>
+                            <div>
+                                <div>teste</div>
+                            </div>
+                            <input type="radio" name="pagamento" id="forma2" checked hidden>
+                            <div>
+                                <div>2</div>
+                            </div>
+                            <input type="radio" name="pagamento" id="forma3" checked hidden>
+                            <div>
+                                <div>
+                                    <small>Número do pedido</small>
+                                    <span>6966</span>
+                                </div>
+                                <div>
+                                    <input type="radio" name="" id="">
+                                    <img src="" alt="">
+                                    <span>Nome do Banco</span>
+                                    <span>R$60,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagamento__metodo__formas">
+                <div class="accordion">
+                    <input type="checkbox" name="collapse2" id="conta__tile">
+                    <span class="title title__pagamento">
+                        <label for="conta__tile">Deposito em Conta</label>
+                    </span>
+                    <div class="content">
+                        <div class="pagamento__deposito_conta">
+                            <img src="disc/img/card.png" alt="">
+                            <div>
+                                <span><strong>432</strong>- Nome Branco</span>
+                                <span><strong>Agência:</strong> 000</span>
+                                <span><strong>Conta:</strong> 000000-00</span>
+                                <span><strong>CNPJ/CPF:</strong> 00-000.000/000-00</span>
+                                <span><strong>Nome Fornecedor:</strong> Marcos Whatever</span>
+                                <span>Marcos Creation ME</span>
+                            </div>
+                            <div>
+                                <span>Número do Pedido</span>
+                                <strong>6669</strong>
+                            </div>
+                        </div>
+                        <div class="pagamento__deposito_conta__info">
+                            <span>Informações Complementares</span>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae neque quod non
+                                officiis consectetur necessitatibus qui ipsa expedita quaerat? Tenetur?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagamento__resumo">
+            <h2>Resumo do Pedido</h2>
+            <div class="pagamento__resumo__produto">
+                <div class="pagamento__resumo__produto__inner">
+                    <img src="disc/img/card.png" alt="">
+                    <span>Nome do produto</span>
+                </div>
+                <div class="pagamento__resumo__produto__preco">
+                    <span>2 Unidades</span>
+                    <span>R$ 20,00</span>
+                </div>
+            </div>
+            <div class="pagamento__resumo__produto">
+                <div class="pagamento__resumo__produto__inner">
+                    <img src="disc/img/card.png" alt="">
+                    <span>Nome do produto</span>
+                </div>
+                <div class="pagamento__resumo__produto__preco">
+                    <span>2 Unidades</span>
+                    <span>R$ 20,00</span>
+                </div>
+            </div>
+            <div class="pagamento__resumo__preco">
+                <div>
+                    <span>Subtotal</span>
+                    <span>R$ 40,00</span>
+                </div>
+                <div>
+                    <span>Frete</span>
+                    <span>R$ 40,00</span>
+                </div>
+                <div>
+                    <span>Desconto</span>
+                    <span>R$ 00,00</span>
+                </div>
+                <div>
+                    <span>Total</span>
+                    <span>R$ 80,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
