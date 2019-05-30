@@ -38,7 +38,7 @@
     <section class="pagamento">
         <div class="pagamentos__dados">
             <div class="pagamento__dados__acesso">
-                <h2>Dados de acesso</h2>
+                <h2 class="main_title__header"><img src="disc/ico/Prancheta 21 cópia 13.png"> Dados de acesso</h2>
                 <span>Marcos Wellerson Máximo Rodrigues</span>
                 <span>mw@gmail.com</span>
                 <span>(00) 0 0000-0000</span>
@@ -49,17 +49,16 @@
                     <p>00000-000</p>
                 </div>
                 <div class="pagamento__btn">
-                    <a href="">Não é você? Sair.</a>
-                    <a href="" class="btn__bombom">Alterar Endereço</a>
+                    <a href="">Não é você? Sair ></a>
+                    <a href="" class="btn__bombom btn__finalizar">Alterar Endereço</a>
                 </div>
             </div>
             <div class="pagamento__dados__entrega">
-                <h2>Endereço/Entrego</h2>
+                <h2 class="main_title__header"><img src="disc/ico/Prancheta 21 cópia 14.png"> Endereço/Entrego</h2>
                 <form action="">
                     <div>
                         <input type="radio" name="pac" value="pac1" id="pac1">
                         <label for="pac1">PAC (6 dias úteis)</label>
-
                     </div>
                     <div>
                         <input type="radio" value="pac2" name="pac" id="pac2">
@@ -68,10 +67,10 @@
                     </div>
                 </form>
                 <div class="accordion">
-                    <input type="checkbox" name="collapse2" id="accordion__tile">
-                    <span class="title">
-                        <label for="accordion__tile">Retirar na loga</label>
-                        <label for="accordion__tile">R$16,00 ></label>
+                    <input type="checkbox" name="collapse2" id="lateral__tile">
+                    <span class="title title__pagamento">
+                        <label class="title__accordion" for="lateral__tile"><span>Retirar na loga</span><img
+                                src="disc/ico/arrow-down-sign-to-navigate.png"></label>
                     </span>
                     <div class="content">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, tempora?</p>
@@ -81,8 +80,9 @@
         </div>
         <div class="pagamento__metodo">
             <div class="form pagamento__metodo__form">
-                <form action="">
-                    <input type="text">
+                <form action="" class="form__cupom__desconto">
+                    <img src="disc/ico/Prancheta 21 cópia 12.png">
+                    <input class="cupom_input" type="text" placeholder="Cupom de Desconto">
                     <input type="submit" class="btn__bombom btn__cupom" value="Aplicar Cupom">
                 </form>
             </div>
@@ -90,26 +90,68 @@
                 <div class="accordion">
                     <input type="checkbox" name="collapse2" id="metado__tile">
                     <span class="title title__pagamento">
-                        <label for="metado__tile">Métodos de Pagamento</label>
+                        <label class="title__accordion" for="metado__tile"><span>Métodos de Pagamento</span><img
+                                src="disc/ico/arrow-down-sign-to-navigate.png"></label>
                     </span>
                     <div class="content">
                         <div class="pagamento__checkout">
-                            <span>Selecione a forma de pagamento</span>
-                            <span>
-                                <label for="forma1">Cartão de Crédito</label>
-                                <label for="forma2">Boleto Bancário</label>
-                                <label for="forma3">Débito Online</label>
-                            </span>
-                            <input type="radio" name="pagamento" id="forma1" checked hidden>
-                            <div>
-                                <div>teste</div>
+                            <h3>Selecione a forma de pagamento</h3>
+
+                            <input type="radio" name="pagamento" id="tab1" checked>
+                            <label for="tab1">Cartão de Crédito</label>
+                            <input type="radio" name="pagamento" id="tab2">
+                            <label for="tab2">Boleto Bancário</label>
+                            <input type="radio" name="pagamento" id="tab3">
+                            <label for="tab3">Débito Online</label>
+
+                            <div id="content1">
+                                <div>
+                                    <div id="cartao__info">
+                                        <div class="cartao__info__frente">
+                                            <img src="disc/img/cartao_credito.png">
+                                            <span>1111 1111 1111 1111</span>
+                                            <span>Válidade: <b>12/20</b></span>
+                                            <span>Marcos Wellerson Máximos</span>
+                                        </div>
+                                        <div class="cartao__info__tras">
+
+                                        </div>
+                                    </div>
+                                    <form action="" class="form form__content__cartao">
+                                        <div>
+                                            <label for="">CPF/CNPJ:(Obrigatorio)</label>
+                                            <input type="text">
+                                        </div>
+                                        <div>
+                                            <label for="">Número do Cartão:(Obrigatorio)</label>
+                                            <input type="text">
+                                        </div>
+                                        <div>
+                                            <label for="">Nome Completo no Cartão:(Obrigatorio)</label>
+                                            <input type="text">
+                                        </div>
+                                        <div>
+                                            <label for="">Válidade:(Obrigatorio)</label>
+                                            <input type="text">
+                                        </div>
+                                        <div>
+                                            <label for="">CVV:(Obrigatorio)</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="form__content__cartao__label__parcelas">
+                                            <label for="">Parcelas:</label>
+                                            <select name="parcelas" id="">
+                                                <option value="0">- 2x de R$ 30,00 sem juros</option>
+                                                <option value="2">- 3x de R$ 10,00 sem juros</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
-                            <input type="radio" name="pagamento" id="forma2" checked hidden>
-                            <div>
+                            <div id="content2">
                                 <div>2</div>
                             </div>
-                            <input type="radio" name="pagamento" id="forma3" checked hidden>
-                            <div>
+                            <div id="content3">
                                 <div>
                                     <small>Número do pedido</small>
                                     <span>6966</span>
@@ -129,7 +171,8 @@
                 <div class="accordion">
                     <input type="checkbox" name="collapse2" id="conta__tile">
                     <span class="title title__pagamento">
-                        <label for="conta__tile">Deposito em Conta</label>
+                        <label class="title__accordion" for="conta__tile"><span>Deposito em Conta</span><img
+                                class="img__acco" src="disc/ico/arrow-down-sign-to-navigate.png"></label>
                     </span>
                     <div class="content">
                         <div class="pagamento__deposito_conta">
@@ -158,27 +201,32 @@
             </div>
         </div>
         <div class="pagamento__resumo">
-            <h2>Resumo do Pedido</h2>
+            <h2 class="main_title__header"><img src="disc/ico/Prancheta 21 cópia 15.png"> Resumo do Pedido</h2>
             <div class="pagamento__resumo__produto">
                 <div class="pagamento__resumo__produto__inner">
                     <img src="disc/img/card.png" alt="">
-                    <span>Nome do produto</span>
-                </div>
-                <div class="pagamento__resumo__produto__preco">
-                    <span>2 Unidades</span>
+                    <span>Nome do produto <p>2 Unidades</p></span>
                     <span>R$ 20,00</span>
+                    <span></span>
                 </div>
             </div>
             <div class="pagamento__resumo__produto">
                 <div class="pagamento__resumo__produto__inner">
                     <img src="disc/img/card.png" alt="">
-                    <span>Nome do produto</span>
-                </div>
-                <div class="pagamento__resumo__produto__preco">
-                    <span>2 Unidades</span>
+                    <span>Nome do produto <p>2 Unidades</p></span>
                     <span>R$ 20,00</span>
+                    <span></span>
                 </div>
             </div>
+            <div class="pagamento__resumo__produto">
+                <div class="pagamento__resumo__produto__inner">
+                    <img src="disc/img/card.png" alt="">
+                    <span>Nome do produto <p>2 Unidades</p></span>
+                    <span>R$ 20,00</span>
+                    <span></span>
+                </div>
+            </div>
+
             <div class="pagamento__resumo__preco">
                 <div>
                     <span>Subtotal</span>
