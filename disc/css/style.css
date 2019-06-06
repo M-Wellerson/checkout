@@ -23,6 +23,7 @@ body {
     --grey_light:   hsl(0, 0%, 71%);
     --grey_lighter: hsl(0, 0%, 96%);
     --tema: #C00;
+    --radius: 6px;
   }
 
 .header {
@@ -393,17 +394,23 @@ body {
 
 .login, .cadastro__start {
 	width: 500px;
-	height: 330px;
-	box-shadow: 0px 3px 14px -3px rgba(0, 0, 0, 0.75);
+    height: 350px;
+    border-radius: var(--radius);
+    background-color: #FFF;
+	box-shadow: 0 15px 35px 0 rgba(42,51,83,.12), 0 5px 15px rgba(0,0,0,.06);
 	margin-bottom: 30px;
 }
 
 .cadastro__dados__acesso {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    background-color: #FFF;
     margin: 0 auto;
     height: 670px;
 	box-shadow: 0px 3px 14px -3px rgba(0, 0, 0, 0.75);
+}
+
+.cadastro__dados__acesso_info {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .cadastro__dados__endereco {
@@ -444,13 +451,17 @@ body {
 
 .form input[type=email], .form input[type=password], .form input[type=text], .form select {
 	display: inline-block;
-    width: 70%;
-    border: 1px solid var(--grey_light);
-    border-radius: 6px;
-    min-height: 40px;
+    width: 100%;
+    border-radius: 2px;
+    border-bottom: 2px solid var(--grey_light);
+    min-height: 30px;
     line-height: 40px;
     padding: 0 12px;
     outline: none;
+}
+
+.form input[type=email]:focus, .form input[type=password]:focus, .form input[type=text]:focus, .form select:focus {
+    border-bottom: 2px solid var(--blue);
 }
 
 .form input[type=submit] {
@@ -469,6 +480,14 @@ body {
 	padding: 20px;
 }
 
+.login__pessoa_juridica div {
+    margin: 10px;
+}
+
+.form__cadastro_acesso div {
+    margin: 15px;
+}
+
 .form__login div label, .form__cadastro__start label, .form__cadastro_endereco label, .form__cadastro_acesso div label, .form__cadastro_abas label {
     display: block;
     margin-bottom: 7px;
@@ -484,13 +503,6 @@ body {
 
 .cadastro__dados__acesso {
 	margin-bottom: 30px;
-}
-
-.identificacao_title, .cadastro_title {
-	font-size: 30px;
-	margin: 20px;
-	color: #888888;
-	border-bottom: 2px solid #888888;
 }
 
 .form__cadastro_acesso input {
@@ -520,7 +532,7 @@ body {
     display: none;
     padding: 8px;
     width: 400px;
-    height: 640px;
+    height: 540px;
 	background: #FFF;
 	z-index: 0;
 }
