@@ -5,23 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Carrinho</title>
+    <title>Confirmação</title>
     <link rel="stylesheet" href="disc/css/style.css">
+    <link rel="stylesheet" href="./disc/css/brc.css">
+    <link rel="stylesheet" href="./disc/css/mobile.css" media="screen and (max-width:760px)">
 </head>
 
 <body>
     <header class="header">
         <nav class="header__nav">
-            <div><img src="disc/ico/left-arrow.png"></div>
-            <div><img src="disc/img/logo-upsite.png"></div>
+            <div>
+                <a href="javascript:void(0)">
+                    <img src="disc/ico/c-back.png" class="header__btn_back invert">
+                </a>
+            </div>
+            <div>
+                <img src="disc/logo/logo.png" class="header__logo">
+            </div>
             <div class="header__menu__user">
-                <img src="disc/ico/Prancheta 21 cópia 13.png">
                 <div>
-                    <span>Olá, Marcos! Seja bem-vindo.</span>
+                    <span class="desktop">
+                        <img src="disc/ico/c-user.png" class="invert">
+                        Olá, Marcos! Seja bem-vindo.
+                    </span>
                     <div>
-                        <a href=""><img class="menu__user_icon" src="disc/ico/Prancheta 21 cópia 21.png">Editar meus
-                            dados</a>
-                        <a href=""><img class="menu__user_icon" src="disc/ico/Prancheta 21 cópia 17.png">Sair</a>
+                        <a href="./meus-dados.html" class="menu__user_icon">
+                            <img src="disc/ico/c-edit.png" class="invert">
+                            <span class="desktop">Editar dados</span>
+                            <span class="mobile">Perfil</span>
+
+                        </a>
+                        <a href="./login.html" class="menu__user_icon">
+                            <img src="disc/ico/c-logout.png" class="invert">
+                            Sair
+                        </a>
                     </div>
                 </div>
             </div>
@@ -29,29 +46,50 @@
     </header>
 
     <section class="etapas">
-        <div><img src="disc/ico/Prancheta 21 cópia 15.png"><span>Carrinho</span></div>
-        <div><img src="disc/ico/Prancheta 21 cópia 13.png"><span>Autentificação</span></div>
-        <div><img src="disc/ico/Prancheta 21 cópia 3.png"><span>Pagamento</span></div>
-        <div><img src="disc/ico/Prancheta 21 cópia.png"><span>Confirmação</span></div>
+        <div>
+            <figure>
+                <img src="disc/ico/c-cart.png">
+            </figure>
+            <span>Carrinho</span>
+        </div>
+        <div>
+            <figure class="etapas__desativadas">
+                <img src="disc/ico/c-user.png">
+            </figure>
+            <span>Autentificação</span>
+        </div>
+        <div>
+            <figure class="etapas__desativadas">
+                <img src="disc/ico/c-money.png">
+            </figure>
+            <span>Pagamento</span>
+        </div>
+        <div>
+            <figure class="etapas__desativadas">
+                <img src="disc/ico/c-truck.png">
+            </figure>
+            <span>Confirmação</span>
+        </div>
     </section>
-
     <section class="confirmacao">
         <div class="confirmacao__info">
             <div class="confirmacao__info__dados">
-                <h2 class="main_title__header"><img src="disc/ico/Prancheta 21 cópia 13.png" alt="">Dados de acesso</h2>
+                <h2 class="main_title__header"><img src="disc/ico/c-user.png" alt="">Dados de acesso</h2>
                 <p>Marcos Whatever</p>
                 <p>mw@gmail.com</p>
                 <p>(88) 8 8888-8888</p>
             </div>
             <div class="confirmacao__info__dados">
-                <h2 class="main_title__header"><img src="disc/ico/Prancheta 21 cópia 13.png" alt="">Endereço/Entrega</h2>
+                <h2 class="main_title__header"><img src="disc/ico/c-travel.png" alt="">Endereço/Entrega
+                </h2>
                 <p>Avenida Nevermind</p>
                 <p>Whateverá</p>
                 <p>Cidade Yeah - CE</p>
                 <p>(88) 8 8888-8888</p>
             </div>
             <div class="confirmacao__info__dados">
-                <h2 class="main_title__header"><img src="disc/ico/Prancheta 21 cópia 13.png" alt="">Método de Entrega</h2>
+                <h2 class="main_title__header"><img src="disc/ico/c-truck.png" alt="">Método de Entrega
+                </h2>
                 <p>Correios PAC <strong>7 dias úteis</strong></p>
                 <small>Endereço para retirada</small>
                 <div>
@@ -59,86 +97,73 @@
                 </div>
             </div>
             <div class="confirmacao__info__dados">
-                <h2 class="main_title__header"><img src="disc/ico/Prancheta 21 cópia 13.png" alt="">Método de Pagamento</h2>
+                <h2 class="main_title__header"><img src="disc/ico/c-carteira.png" alt="">Método de Pagamento
+                </h2>
                 <p>Boleto Bancário</p>
             </div>
             <div class="confirmacao__info__dados">
-                <h2 class="main_title__header"><img src="disc/ico/Prancheta 21 cópia 13.png" alt="">Pedido</h2>
-                <small>Número do Pedido</small>
-                <strong>6696</strong>
-                <img src="" alt="">
-                <small>000 0000 000000 000 000000 00000 00000 0</small>
-                <a href="" class="btn__bombom">Imprimir Boleto</a>
+                <h2 class="main_title__header"><img src="disc/ico/c-cart-light.png" alt="">Pedido</h2>
+                <div class="content__boleto__inner">
+                    <small>Número do Pedido:</small>
+                    <span>53242</span>
+                </div>
+                <img class="img__boleto__confirmacao" src="disc/img/58041.jpg" alt="">
+                <span class="numero__codigo_barras">000 0000 00000000 000 000000 00000 000000
+                    0</span>
+                <a href="" class="btn__bombom btn__finalizar_compra">Finalizar Compra</a>
             </div>
         </div>
         <div class="confirmacao__produto__lista">
-            <div class="carrinho__header">
-                <span>Nome Produto</span>
-                <span>Preço</span>
-                <span>Quantidade</span>
-                <span>Presente</span>
-                <span>Total</span>
-            </div>
-            <div class="carrinho__produto">
-                <div class="carrinho__produto__card">
-                    <div class="carrinho__produto__card__produto_info">
-                        <img class="carrinho__img__card" src="disc/img/card.png" alt="">
-                        <div class="carrinho__card__info">
-                            <span>Categoria</span><br>
-                            <span>Nome Produto</span><br>
-                            <span>Cor: Azul</span><br>
-                            <span>Tamanho: M</span>
-                        </div>
-                    </div>
-                    <div>R$ 200,00</div>
-                    <div>
-                        <form action="">
-                            <input type="number" class="carrinho_input_number">
-                        </form>
-                    </div>
-                    <div><input type="checkbox" name="" id=""></div>
-                    <div>R$ 200,00</div>
-                    <div class="carrinho__produto__card_img"><a href=""><img src="disc/ico/remove.png" alt=""></a></div>
+            <div class="carrinho__produto__inner">
+                <div class="carrinho__header__lista desktop">
+                    <span>Nome Produto</span>
+                    <span>Preço</span>
+                    <span>Quantidade</span>
+                    <span>Total</span>
                 </div>
-                <div class="carrinho__produto__card">
-                    <div class="carrinho__produto__card__produto_info">
-                        <img class="carrinho__img__card" src="disc/img/card.png" alt="">
-                        <div class="carrinho__card__info">
-                            <span>Categoria</span><br>
-                            <span>Nome Produto</span><br>
-                            <span>Cor: Azul</span><br>
-                            <span>Tamanho: M</span>
+                <div class="carrinho__produto">
+                    <div class="carrinho__produto__card__confirmacao">
+                        <div class="carrinho__produto__card__produto_info">
+                            <img class="carrinho__img__card" src="https://via.placeholder.com/500" alt="">
+                            <div class="carrinho__card__info">
+                                <span>Categoria</span>
+                                <span>Nome Produto</span>
+                                <span> <b>Cor:</b> Azul</span>
+                                <span> <b>Tamanho:</b> M</span>
+                            </div>
+                        </div>
+                        <i>
+                            <span class="mobile">Preço</span>
+                            <br>
+                            R$ 200,00
+                        </i>
+                        <div>3</div>
+                        <div>R$ 600,00</div>
+                        <div class="carrinho__produto__card_img"><a href=""><img src="disc/ico/remove.png" alt=""></a>
                         </div>
                     </div>
-                    <div>R$ 200,00</div>
-                    <div>
-                        <form action="">
-                            <input type="number" class="carrinho_input_number">
-                        </form>
-                    </div>
-                    <div><input type="checkbox" name="" id=""></div>
-                    <div>R$ 200,00</div>
-                    <div class="carrinho__produto__card_img"><a href=""><img src="disc/ico/remove.png" alt=""></a></div>
                 </div>
-                <div class="carrinho__produto__card">
-                    <div class="carrinho__produto__card__produto_info">
-                        <img class="carrinho__img__card" src="disc/img/card.png" alt="">
-                        <div class="carrinho__card__info">
-                            <span>Categoria</span><br>
-                            <span>Nome Produto</span><br>
-                            <span>Cor: Azul</span><br>
-                            <span>Tamanho: M</span>
+                <div class="carrinho__produto">
+                    <div class="carrinho__produto__card__confirmacao">
+                        <div class="carrinho__produto__card__produto_info">
+                            <img class="carrinho__img__card" src="https://via.placeholder.com/500" alt="">
+                            <div class="carrinho__card__info">
+                                <span>Categoria</span>
+                                <span>Nome Produto</span>
+                                <span> <b>Cor:</b> Azul</span>
+                                <span> <b>Tamanho:</b> M</span>
+                            </div>
+                        </div>
+                        <i>
+                            <span class="mobile">Preço</span>
+                            <br>
+                            R$ 200,00
+                        </i>
+                        <div>3</div>
+                        <div>R$ 600,00</div>
+                        <div class="carrinho__produto__card_img"><a href=""><img src="disc/ico/remove.png" alt=""></a>
                         </div>
                     </div>
-                    <div>R$ 200,00</div>
-                    <div>
-                        <form action="">
-                            <input type="number" class="carrinho_input_number">
-                        </form>
-                    </div>
-                    <div><input type="checkbox" name="" id=""></div>
-                    <div>R$ 200,00</div>
-                    <div class="carrinho__produto__card_img"><a href=""><img src="disc/ico/remove.png" alt=""></a></div>
                 </div>
             </div>
             <div class="carrinho__lista__desejo__info">
@@ -152,6 +177,40 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div>
+                <h3>Site Seguro</h3>
+                <img src="./disc/img/logo-upcheckout.png" height="30">
+            </div>
+            <div>
+                <h3>Formas de Pagamento</h3>
+                <img src="./disc/img/pagseguro.png" height="30">
+                <img src="./disc/img/bandeiras.png" height="30">
+            </div>
+            <div>
+                <h3>Ajuda e Suporte</h3>
+                <a href="tel:+55999999999">(00) 0 0000-0000</a>
+                <a href="mailto:contato@sualoja.com">contato@sualoja.com</a>
+                <p>
+                    <b>Expediente:</b>
+                    de segunda a sexta das 9:00hs ás 17:00hs
+                    eceto feriados e comemorações
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div id="footer__info_loja">
+        CNPJ: xx.xxx.xxx/xxxx-xx <br>
+        Razão Social: Loja de roupas LTDA <br>
+        Endereço; Rua das flores, Nº 12 - Centro - alias <br> <br>
+        &copy; 2019 Loja Virtual. Todos os direitos reservados. <br>
+        <div>
+            <img src="./disc/img/logo-upsite.png" height="50">
+            <img src="./disc/img/logo-box.png" height="50">
+        </div>
+    </div>
 </body>
 
 </html>

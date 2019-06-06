@@ -5,23 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Carrinho</title>
+    <title>Formas de Pagamento</title>
     <link rel="stylesheet" href="disc/css/style.css">
+    <link rel="stylesheet" href="./disc/css/brc.css">
+    <link rel="stylesheet" href="./disc/css/mobile.css" media="screen and (max-width:760px)">
 </head>
 
 <body>
     <header class="header">
         <nav class="header__nav">
-            <div><img src="disc/ico/left-arrow.png"></div>
-            <div><img src="disc/img/logo-upsite.png"></div>
+            <div>
+                <a href="javascript:void(0)">
+                    <img src="disc/ico/c-back.png" class="header__btn_back invert">
+                </a>
+            </div>
+            <div>
+                <img src="disc/logo/logo.png" class="header__logo">
+            </div>
             <div class="header__menu__user">
-                <img src="disc/ico/Prancheta 21 cópia 13.png">
                 <div>
-                    <span>Olá, Marcos! Seja bem-vindo.</span>
+                    <span class="desktop">
+                        <img src="disc/ico/c-user.png" class="invert">
+                        Olá, Marcos! Seja bem-vindo.
+                    </span>
                     <div>
-                        <a href=""><img class="menu__user_icon" src="disc/ico/Prancheta 21 cópia 21.png">Editar meus
-                            dados</a>
-                        <a href=""><img class="menu__user_icon" src="disc/ico/Prancheta 21 cópia 17.png">Sair</a>
+                        <a href="./meus-dados.html" class="menu__user_icon">
+                            <img src="disc/ico/c-edit.png" class="invert">
+                            <span class="desktop">Editar dados</span>
+                            <span class="mobile">Perfil</span>
+                        </a>
+                        <a href="./login.html" class="menu__user_icon">
+                            <img src="disc/ico/c-logout.png" class="invert">
+                            Sair
+                        </a>
                     </div>
                 </div>
             </div>
@@ -29,16 +45,36 @@
     </header>
 
     <section class="etapas">
-        <div><img src="disc/ico/Prancheta 21 cópia 15.png"><span>Carrinho</span></div>
-        <div><img src="disc/ico/Prancheta 21 cópia 13.png"><span>Autentificação</span></div>
-        <div><img src="disc/ico/Prancheta 21 cópia 3.png"><span>Pagamento</span></div>
-        <div><img class="etapas__desativadas" src="disc/ico/Prancheta 21 cópia.png"><span>Confirmação</span></div>
+        <div>
+            <figure>
+                <img src="disc/ico/c-cart.png">
+            </figure>
+            <span>Carrinho</span>
+        </div>
+        <div>
+            <figure class="etapas__desativadas">
+                <img src="disc/ico/c-user.png">
+            </figure>
+            <span>Autentificação</span>
+        </div>
+        <div>
+            <figure class="etapas__desativadas">
+                <img src="disc/ico/c-money.png">
+            </figure>
+            <span>Pagamento</span>
+        </div>
+        <div>
+            <figure class="etapas__desativadas">
+                <img src="disc/ico/c-truck.png">
+            </figure>
+            <span>Confirmação</span>
+        </div>
     </section>
 
     <section class="pagamento">
         <div class="pagamentos__dados">
             <div class="pagamento__dados__acesso">
-                <h2 class="main_title__header"><img src="disc/ico/Prancheta 21 cópia 13.png"> Dados de acesso</h2>
+                <h2 class="main_title__header"><img src="disc/ico/c-user.png"> Dados de acesso</h2>
                 <span>Marcos Wellerson Máximo Rodrigues</span>
                 <span>mw@gmail.com</span>
                 <span>(00) 0 0000-0000</span>
@@ -54,23 +90,28 @@
                 </div>
             </div>
             <div class="pagamento__dados__entrega">
-                <h2 class="main_title__header"><img src="disc/ico/Prancheta 21 cópia 14.png"> Endereço/Entrego</h2>
+                <h2 class="main_title__header"><img src="disc/ico/c-travel.png">Endereço/Entrego</h2>
                 <form action="">
                     <div>
                         <input type="radio" name="pac" value="pac1" id="pac1">
-                        <label for="pac1">PAC (6 dias úteis)</label>
+                        <label for="pac1">
+                            <span>PAC (6 dias úteis)</span>
+                            <strong>R$30,00</strong>
+                        </label>
                     </div>
                     <div>
                         <input type="radio" value="pac2" name="pac" id="pac2">
-                        <label for="pac2">PAC (6 dias úteis)</label>
-                        <p>R$10,00</p>
+                        <label for="pac2">
+                            <span>PAC (6 dias úteis)</span>
+                            <strong>R$30,00</strong>
+                        </label>
                     </div>
                 </form>
                 <div class="accordion">
                     <input type="checkbox" name="collapse2" id="lateral__tile">
                     <span class="title title__pagamento">
                         <label class="title__accordion" for="lateral__tile"><span>Retirar na loga</span><img
-                                src="disc/ico/arrow-down-sign-to-navigate.png"></label>
+                                src="disc/ico/c-down_arrow.png"></label>
                     </span>
                     <div class="content">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, tempora?</p>
@@ -79,9 +120,9 @@
             </div>
         </div>
         <div class="pagamento__metodo">
-            <div class="form pagamento__metodo__form">
-                <form action="" class="form__cupom__desconto">
-                    <img src="disc/ico/Prancheta 21 cópia 12.png">
+            <div class="pagamento__metodo__form">
+                <form action="" class="form form__cupom__desconto">
+                    <img src="disc/ico/c-discount.png">
                     <input class="cupom_input" type="text" placeholder="Cupom de Desconto">
                     <input type="submit" class="btn__bombom btn__cupom" value="Aplicar Cupom">
                 </form>
@@ -91,17 +132,17 @@
                     <input type="checkbox" name="collapse2" id="metado__tile">
                     <span class="title title__pagamento">
                         <label class="title__accordion" for="metado__tile"><span>Métodos de Pagamento</span><img
-                                src="disc/ico/arrow-down-sign-to-navigate.png"></label>
+                                src="disc/ico/c-down_arrow.png"></label>
                     </span>
                     <div class="content">
                         <div class="pagamento__checkout">
                             <h3>Selecione a forma de pagamento</h3>
 
-                            <input type="radio" name="pagamento" id="tab1" checked>
+                            <input type="radio" name="pagamento" id="tab1" checked hidden>
                             <label for="tab1">Cartão de Crédito</label>
-                            <input type="radio" name="pagamento" id="tab2">
+                            <input type="radio" name="pagamento" id="tab2" hidden>
                             <label for="tab2">Boleto Bancário</label>
-                            <input type="radio" name="pagamento" id="tab3">
+                            <input type="radio" name="pagamento" id="tab3" hidden>
                             <label for="tab3">Débito Online</label>
 
                             <div id="content1">
@@ -145,23 +186,42 @@
                                                 <option value="2">- 3x de R$ 10,00 sem juros</option>
                                             </select>
                                         </div>
+                                        <input type="submit" value="Finalizar Compra"
+                                            class="btn__bombom btn__finalizar_compra">
                                     </form>
                                 </div>
                             </div>
                             <div id="content2">
-                                <div>2</div>
+                                <div>
+                                    <div class="content__boleto__inner">
+                                        <small>Número do Pedido:</small>
+                                        <span>53242</span>
+                                    </div>
+                                    <img class="img__boleto" src="disc/img/58041.jpg" alt="">
+                                    <span class="numero__codigo_barras">000 0000 00000000 000 000000 00000 000000
+                                        0</span>
+                                    <a href="" class="btn__bombom btn__finalizar_compra">Finalizar Compra</a>
+                                </div>
                             </div>
                             <div id="content3">
-                                <div>
-                                    <small>Número do pedido</small>
-                                    <span>6966</span>
-                                </div>
-                                <div>
-                                    <input type="radio" name="" id="">
-                                    <img src="" alt="">
-                                    <span>Nome do Banco</span>
-                                    <span>R$60,00</span>
-                                </div>
+                                <form>
+                                    <div>
+                                        <input type="radio" name="banco" value="banco1" id="banco1">
+                                        <label class="info__deposito_banck" for="banco1">
+                                            <img src="https://via.placeholder.com/100x70" alt="">
+                                            <span>Nome do Banco</span>
+                                            <strong>R$ 60,00</strong>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" value="banco2" name="banco" id="banco2">
+                                        <label class="info__deposito_banck" for="banco2">
+                                            <img src="https://via.placeholder.com/100x70" alt="">
+                                            <span>Nome do Banco</span>
+                                            <strong>R$ 60,00</strong>
+                                        </label>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -172,7 +232,7 @@
                     <input type="checkbox" name="collapse2" id="conta__tile">
                     <span class="title title__pagamento">
                         <label class="title__accordion" for="conta__tile"><span>Deposito em Conta</span><img
-                                class="img__acco" src="disc/ico/arrow-down-sign-to-navigate.png"></label>
+                                class="img__acco" src="disc/ico/c-down_arrow.png"></label>
                     </span>
                     <div class="content">
                         <div class="pagamento__deposito_conta">
@@ -201,7 +261,7 @@
             </div>
         </div>
         <div class="pagamento__resumo">
-            <h2 class="main_title__header"><img src="disc/ico/Prancheta 21 cópia 15.png"> Resumo do Pedido</h2>
+            <h2 class="main_title__header"><img src="disc/ico/c-cart-light.png">Resumo do Pedido</h2>
             <div class="pagamento__resumo__produto">
                 <div class="pagamento__resumo__produto__inner">
                     <img src="disc/img/card.png" alt="">
@@ -247,6 +307,40 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div>
+                <h3>Site Seguro</h3>
+                <img src="./disc/img/logo-upcheckout.png" height="30">
+            </div>
+            <div>
+                <h3>Formas de Pagamento</h3>
+                <img src="./disc/img/pagseguro.png" height="30">
+                <img src="./disc/img/bandeiras.png" height="30">
+            </div>
+            <div>
+                <h3>Ajuda e Suporte</h3>
+                <a href="tel:+55999999999">(00) 0 0000-0000</a>
+                <a href="mailto:contato@sualoja.com">contato@sualoja.com</a>
+                <p>
+                    <b>Expediente:</b>
+                    de segunda a sexta das 9:00hs ás 17:00hs
+                    eceto feriados e comemorações
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div id="footer__info_loja">
+        CNPJ: xx.xxx.xxx/xxxx-xx <br>
+        Razão Social: Loja de roupas LTDA <br>
+        Endereço; Rua das flores, Nº 12 - Centro - alias <br> <br>
+        &copy; 2019 Loja Virtual. Todos os direitos reservados. <br>
+        <div>
+            <img src="./disc/img/logo-upsite.png" height="50">
+            <img src="./disc/img/logo-box.png" height="50">
+        </div>
+    </div>
 </body>
 
 </html>

@@ -7,10 +7,6 @@
     font-family: 'Lato', sans-serif;
 }
 
-body {
-    background-color: #f3f3f3;
-}
-
 :root {
     --success:      hsl(141, 71%, 48%);
     --warning:      hsl(48, 100%, 67%);
@@ -24,6 +20,7 @@ body {
     --grey_lighter: hsl(0, 0%, 96%);
     --tema: #C00;
     --radius: 6px;
+    --shadow: 0 15px 35px 0 rgba(42,51,83,.12), 0 5px 15px rgba(0,0,0,.06);
   }
 
 .header {
@@ -149,6 +146,15 @@ body {
     font-weight: bold;
 }
 
+.carrinho__header__lista {
+    display: grid;
+	margin: 0 auto;
+	grid-template-columns: 300px 180px 160px 140px;
+	align-items: center;
+    justify-items: center;
+    font-weight: bold;
+}
+
 .pedido__produto {
 	grid-template-columns: 260px 150px 130px 100px !important;
 }
@@ -185,7 +191,18 @@ body {
     padding: 20px;
 }
 
-.carrinho__header span {margin: 10px;}
+.carrinho__produto__card__confirmacao {
+    display: grid;
+	grid-template-columns: 300px 180px 160px 140px;
+	align-items: center;
+	justify-items: center;
+    margin-bottom: 10px;
+    border-top: 1px solid #DDD;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.carrinho__header span, .carrinho__header__lista span {margin: 10px;}
 
 .carrinho__produto__card__produto_info img {
 	max-width: 120px;
@@ -228,10 +245,11 @@ body {
 }
 
 .cupom_input {
-    width: 60px;
+    width: 70% !important;
     outline: none;
     border-radius: 0 !important;
-	text-indent: 30px;
+    text-indent: 30px;
+    border: none !important;
 }
 
 .carrinho__info {
@@ -344,6 +362,17 @@ body {
     transition: transform 0s;
 }
 
+.img__boleto {
+    max-width: 400px;
+}
+
+.btn__finalizar_compra {
+    background-color: var(--success);
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px !important;
+}
+
 .btn__finalizar, .btn__cadastrar {
     background-color: var(--success);
     color: #fff;
@@ -405,7 +434,8 @@ body {
     background-color: #FFF;
     margin: 0 auto;
     height: 670px;
-	box-shadow: 0px 3px 14px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
 }
 
 .cadastro__dados__acesso_info {
@@ -413,12 +443,22 @@ body {
     grid-template-columns: 50% 50%;
 }
 
-.cadastro__dados__endereco {
-    margin: 0 auto;
-	box-shadow: 0px 3px 14px -3px rgba(0, 0, 0, 0.75);
+.cadastro__dados__acesso_info div h3, .cadastro__dados__endereco h3 {
+    margin-left: 35px !important;
+    margin-top: 20px !important;
+    font-weight: lighter;
+    margin: 10px;
 }
 
-.cadastro__dados__acesso div h3, .cadastro__dados__endereco h3 {
+.cadastro__dados__endereco {
+    margin: 0 auto;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    background-color: #FFF;
+    margin-bottom: 20px;
+}
+
+.cadastro__dados__endereco h3 {
     margin: 10px;
 }
 
@@ -498,7 +538,10 @@ body {
     display: grid;
 	grid-template-columns: 50% 50%;
     align-items: center;
-    margin-bottom: 10px;
+}
+
+.form__cadastro_endereco div {
+    margin: 10px;
 }
 
 .cadastro__dados__acesso {
@@ -553,6 +596,10 @@ body {
     color: #777878;
 }
 
+.confirmacao__info__dados div span {
+    display: block;
+}
+
 .pagamento__dados__acesso,
 .pagamento__dados__entrega,
 .pagamento__metodo__form,
@@ -570,8 +617,9 @@ body {
 .historico,
 .pedido__single {
     width: 100%;
-    border-radius: 6px;
-    box-shadow: 0 15px 35px 0 rgba(42,51,83,.12),0 5px 15px rgba(0,0,0,.06);
+    background-color: #FFF;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
 	margin-bottom: 30px;
 }
 
@@ -637,7 +685,7 @@ body {
 
 .accordion>input[type="checkbox"]:checked~.content {
     padding: 15px;
-    background-color: var(--grey_lighter);
+    background-color: #fff;
     border-top: 0;
 }
 
@@ -752,24 +800,6 @@ body {
     margin: 20px;
 }
 
-.pagamento__checkout > input:nth-child(2) {
-    position: absolute;
-    top: 50px;
-    left: 6px;
-}
-
-.pagamento__checkout > input:nth-child(4) {
-    position: absolute;
-    top: 50px;
-    left: 142px;
-}
-
-.pagamento__checkout > input:nth-child(6) {
-    position: absolute;
-    top: 50px;
-    left: 268px;
-}
-
 .pagamento__checkout > div label:first-child, .pagamento__checkout > div label:nth-child(2) {
     margin-right: 20px;
 }
@@ -778,11 +808,11 @@ body {
     text-align: center;
 }
 
-.pagamento__checkout > div {
+.pagamento__checkout > div, .login__pessoa_juridica > div {
     display: none;
 }
 
-.pagamento__checkout > label {
+.pagamento__checkout > label, .login__pessoa_juridica > label {
     display: inline-block;
     margin: 0 0 -1px;
     padding: 10px 15px;
@@ -790,10 +820,11 @@ body {
     font-size: 12px;
     text-align: center;
     color: #abc;
-    border: 1px solid transparent;
+    border: 1px solid #abc;
+    border-radius: 16px;
 }
 
-.pagamento__checkout label:before {
+.pagamento__checkout label:before, .login__pessoa_juridica label:before {
   font-weight: normal;
   margin-right: 10px;
 }
@@ -802,19 +833,23 @@ body {
   cursor: pointer;
 }
 
-.pagamento__checkout input:checked + label {
+.pagamento__checkout > input:checked + label, .login__pessoa_juridica input:checked + label {
   color: #fff;
   border-radius: 16px;
   border: 1px solid #abc;
   font-weight: bold;
   background-color: var(--blue);
-  border-bottom: 1px solid #fff;
   margin-bottom: 20px;
 }
 
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
 #tab3:checked ~ #content3 {
+  display: block;
+}
+
+#abas1:checked ~ #content_1_cadastro,
+#abas2:checked ~ #content_2_cadastro {
   display: block;
 }
 
@@ -972,10 +1007,15 @@ body {
 
 .main_title__header {
     display: grid;
-    grid-template-columns: 10% 50%;
+    grid-template-columns: 10% 60%;
+    font-size: 20px;
     align-items: center;
     padding-top: 20px;
     padding-left: 20px;
+}
+
+.main__title__cadastro {
+    grid-template-columns: 6% 50%;
 }
 
 .btn__cupom {
@@ -994,13 +1034,12 @@ body {
     left: 4px;
 }
 
-.form__content__cartao input, .form__content__cartao select {
+.form__content__cartao div input, .form__content__cartao select {
     width: 90% !important;
 }
 
 .form__content__cartao label, .form__content__cartao input {
     font-size: 14px;
-    float: left;
     margin: 5px;
 }
 
@@ -1033,7 +1072,7 @@ body {
 }
 
 .confirmacao__info p, .confirmacao__info small, .confirmacao__info span {
-    margin: 30px;
+    margin: 20px;
 }
 
 .cartao__info__atras {
@@ -1047,10 +1086,57 @@ body {
     margin-left: 70%;
 }
 
+.carrinho__produto__inner {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
 .confirmacao__produto__lista {
     height: 720px !important;
 }
 
 .cartao__info__frente > img {
     max-width: 300px;
+}
+
+.content__boleto__inner small {display: block;}
+.content__boleto__inner span {
+    display: block;
+    font-weight: bolder;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.numero__codigo_barras {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#content3 form > div {
+    display: grid;
+    grid-template-columns: 5% 90%;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.info__deposito_banck {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    align-items: center;
+    margin: 10px;
+}
+
+#content3 form > div img {
+    width: 60px;
+}
+
+.img__boleto__confirmacao {
+    padding: 20px;
+}
+
+.confirmacao__info__dados {
+    padding-bottom: 30px !important;
 }

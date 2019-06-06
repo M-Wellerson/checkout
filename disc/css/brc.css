@@ -218,10 +218,6 @@
     color: #222 !important;
     font-weight: bold;
 }
-.carrinho__produto {
-    border-bottom: 2px solid #DDD;
-    margin-bottom: 20px;
-}
 .carrinho_input_number {
 	width: 40px;
 	border: 1px solid #888888;

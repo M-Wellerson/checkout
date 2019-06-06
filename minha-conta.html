@@ -7,21 +7,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alterar Enredeço</title>
     <link rel="stylesheet" href="disc/css/style.css">
+    <link rel="stylesheet" href="./disc/css/brc.css">
+    <link rel="stylesheet" href="./disc/css/mobile.css" media="screen and (max-width:760px)">
 </head>
 
 <body>
     <header class="header">
         <nav class="header__nav">
-            <div><img src="disc/ico/left-arrow.png"></div>
-            <div><img src="disc/img/logo-upsite.png"></div>
+            <div>
+                <a href="javascript:void(0)">
+                    <img src="disc/ico/c-back.png" class="header__btn_back invert">
+                </a>
+            </div>
+            <div>
+                <img src="disc/logo/logo.png" class="header__logo">
+            </div>
             <div class="header__menu__user">
-                <img src="disc/ico/Prancheta 21 cópia 13.png">
                 <div>
-                    <span>Olá, Marcos! Seja bem-vindo.</span>
+                    <span class="desktop">
+                        <img src="disc/ico/c-user.png" class="invert">
+                        Olá, Marcos! Seja bem-vindo.
+                    </span>
                     <div>
-                        <a href=""><img class="menu__user_icon" src="disc/ico/Prancheta 21 cópia 21.png">Editar meus
-                            dados</a>
-                        <a href=""><img class="menu__user_icon" src="disc/ico/Prancheta 21 cópia 17.png">Sair</a>
+                        <a href="./meus-dados.html" class="menu__user_icon">
+                            <img src="disc/ico/c-edit.png" class="invert">
+                            <span class="desktop">Editar dados</span>
+                            <span class="mobile">Perfil</span>
+
+                        </a>
+                        <a href="./login.html" class="menu__user_icon">
+                            <img src="disc/ico/c-logout.png" class="invert">
+                            Sair
+                        </a>
                     </div>
                 </div>
             </div>
@@ -105,6 +122,40 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div>
+                <h3>Site Seguro</h3>
+                <img src="./disc/img/logo-upcheckout.png" height="30">
+            </div>
+            <div>
+                <h3>Formas de Pagamento</h3>
+                <img src="./disc/img/pagseguro.png" height="30">
+                <img src="./disc/img/bandeiras.png" height="30">
+            </div>
+            <div>
+                <h3>Ajuda e Suporte</h3>
+                <a href="tel:+55999999999">(00) 0 0000-0000</a>
+                <a href="mailto:contato@sualoja.com">contato@sualoja.com</a>
+                <p>
+                    <b>Expediente:</b>
+                    de segunda a sexta das 9:00hs ás 17:00hs
+                    eceto feriados e comemorações
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div id="footer__info_loja">
+        CNPJ: xx.xxx.xxx/xxxx-xx <br>
+        Razão Social: Loja de roupas LTDA <br>
+        Endereço; Rua das flores, Nº 12 - Centro - alias <br> <br>
+        &copy; 2019 Loja Virtual. Todos os direitos reservados. <br>
+        <div>
+            <img src="./disc/img/logo-upsite.png" height="50">
+            <img src="./disc/img/logo-box.png" height="50">
+        </div>
+    </div>
 </body>
 
 </html>
