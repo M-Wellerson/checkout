@@ -1,45 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Carrinho</title>
-    <link rel="stylesheet" href="disc/css/style.css">
+    <link rel="stylesheet" href="./disc/css/style.css">
+    <link rel="stylesheet" href="./disc/css/brc.css">
+    <link rel="stylesheet" href="./disc/css/mobile.css" media="screen and (max-width:760px)">
 </head>
-
 <body>
+
     <header class="header">
         <nav class="header__nav">
-            <div><img src="disc/ico/left-arrow.png"></div>
-            <div><img src="disc/img/logo-upsite.png"></div>
-            <div class="header__menu__user">
-                <img src="disc/ico/Prancheta 21 cópia 13.png">
+            <div>
+                <a href="javascript:void(0)">
+                    <img src="disc/ico/c-back.png" class="header__btn_back invert">
+                </a>
+            </div>
+            <div>
+                <img src="disc/logo/logo.png" class="header__logo">
+            </div>
+            <div class="header__menu__user">                
                 <div>
-                    <span>Olá, Marcos! Seja bem-vindo.</span>
+                    <span class="desktop">
+                        <img src="disc/ico/c-user.png" class="invert">
+                        Olá, Marcos! Seja bem-vindo.
+                    </span>
                     <div>
-                        <a href=""><img class="menu__user_icon" src="disc/ico/Prancheta 21 cópia 21.png">Editar meus
-                            dados</a>
-                        <a href=""><img class="menu__user_icon" src="disc/ico/Prancheta 21 cópia 17.png">Sair</a>
+                        <a href="./meus-dados.html" class="menu__user_icon">
+                            <img  src="disc/ico/c-edit.png" class="invert">
+                            <span class="desktop">Editar dados</span>
+                            <span class="mobile">Perfil</span>
+                            
+                        </a>
+                        <a href="./login.html" class="menu__user_icon">
+                            <img src="disc/ico/c-logout.png" class="invert">
+                            Sair
+                        </a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
 
+
     <section class="etapas">
-        <div><img src="disc/ico/Prancheta 21 cópia 15.png"><span>Carrinho</span></div>
-        <div><img class="etapas__desativadas" src="disc/ico/Prancheta 21 cópia 13.png"><span>Autentificação</span></div>
-        <div><img class="etapas__desativadas" src="disc/ico/Prancheta 21 cópia 3.png"><span>Pagamento</span></div>
-        <div><img class="etapas__desativadas" src="disc/ico/Prancheta 21 cópia.png"><span>Confirmação</span></div>
+        <div>
+            <figure>
+                <img src="disc/ico/c-cart.png">
+            </figure>
+            <span>Carrinho</span>
+        </div>
+        <div>
+            <figure class="etapas__desativadas">
+                <img src="disc/ico/c-user.png">
+            </figure>
+            <span>Autentificação</span>
+        </div>
+        <div>
+            <figure class="etapas__desativadas">
+                <img src="disc/ico/c-money.png">
+            </figure>
+            <span>Pagamento</span>
+        </div>
+        <div>
+            <figure class="etapas__desativadas">
+                <img src="disc/ico/c-truck.png">
+            </figure>
+            <span>Confirmação</span>
+        </div>
     </section>
 
     <section class="carrinho">
-        <div class="carrinho__header">
+        <div class="carrinho__header desktop">
             <span>Nome Produto</span>
             <span>Preço</span>
-            <span>Quantidade</span>
+            <span class="center">Quantidade</span>
             <span>Presente</span>
             <span>Total</span>
             <span></span>
@@ -47,102 +84,122 @@
         <div class="carrinho__produto">
             <div class="carrinho__produto__card">
                 <div class="carrinho__produto__card__produto_info">
-                    <img class="carrinho__img__card" src="disc/img/card.png" alt="">
+                    <img class="carrinho__img__card" src="https://via.placeholder.com/500" alt="">
                     <div class="carrinho__card__info">
-                        <span>Categoria</span><br>
-                        <span>Nome Produto</span><br>
-                        <span>Cor: Azul</span><br>
-                        <span>Tamanho: M</span>
+                        <span>Categoria</span>
+                        <span>Nome Produto</span>
+                        <span> <b>Cor:</b>  Azul</span>
+                        <span> <b>Tamanho:</b>  M</span>
                     </div>
                 </div>
-                <div>R$ 200,00</div>
-                <div>
-                    <form action="">
-                        <input type="number" class="carrinho_input_number">
-                    </form>
+                <i>
+                    <span class="mobile">Preço</span>
+                    <br>
+                    R$ 200,00
+                </i>
+                <div class="center">
+                    <a href="javascript:void(0)" class="carrinho_btn">-</a>                    
+                    <input type="number" value="1" maxlength="2" class="carrinho_input_number">
+                    <a href="javascript:void(0)" class="carrinho_btn carrinho_btn_foco">+</a>
                 </div>
-                <div><input type="checkbox" name="" id=""></div>
-                <div>R$ 200,00</div>
+                <div class="center">
+                    <span class="mobile">Presente?</span>
+                    <br>
+                    <input type="checkbox" name="" id="on_of" >
+                 
+                </div>
+                <b>
+                    <span class="mobile">Subtotal</span>
+                    R$ 200,00
+                </b>
                 <div class="carrinho__produto__card_img"><a href=""><img src="disc/ico/remove.png" alt=""></a></div>
-            </div>
-            <div class="carrinho__produto__card">
-                <div class="carrinho__produto__card__produto_info">
-                    <img class="carrinho__img__card" src="disc/img/card.png" alt="">
-                    <div class="carrinho__card__info">
-                        <span>Categoria</span><br>
-                        <span>Nome Produto</span><br>
-                        <span>Cor: Azul</span><br>
-                        <span>Tamanho: M</span>
-                    </div>
-                </div>
-                <div>R$ 200,00</div>
-                <div>
-                    <form action="">
-                        <input type="number" class="carrinho_input_number">
-                    </form>
-                </div>
-                <div><input type="checkbox" name="" id=""></div>
-                <div>R$ 200,00</div>
-                <div class="carrinho__produto__card_img"><a href=""><img src="disc/ico/remove.png" alt=""></a></div>
-            </div>
-            <div class="carrinho__produto__card">
-                <div class="carrinho__produto__card__produto_info">
-                    <img class="carrinho__img__card" src="disc/img/card.png" alt="">
-                    <div class="carrinho__card__info">
-                        <span>Categoria</span><br>
-                        <span>Nome Produto</span><br>
-                        <span>Cor: Azul</span><br>
-                        <span>Tamanho: M</span>
-                    </div>
-                </div>
-                <div>R$ 200,00</div>
-                <div>
-                    <form action="">
-                        <input type="number" class="carrinho_input_number">
-                    </form>
-                </div>
-                <div><input type="checkbox" name="" id=""></div>
-                <div>R$ 200,00</div>
-                <div class="carrinho__produto__card_img"><a href=""><img src="disc/ico/remove.png" alt=""></a></div>
-            </div>
+            </div>            
         </div>
         <div class="carrinho__info">
             <div class="carrinho__info__calculo_frete">
                 <h3>Calcular frete e prazo</h3>
-                <form action="">
-                    <input type="text" name="" id="">
-                    <input type="submit" value="Calcular">
+                <form action="javascript:void(0)" class="carrinho__calcular_frete" >
+                    <input type="text" name="" id="" placeholder="00000-000">
+                    <label for="">
+                        <img src="./disc/ico/c-check.png">
+                        Calcular
+                    </label>
+                    <input type="submit" value="Calcular" hidden>
                 </form>
+                <div class="carrinho__alerta">
+                    <span>Error ao calcular frete</span>
+                    <span>x</span>
+                </div>
             </div>
             <div class="carrinho__info_frete">
                 <h3>Frete/Entrega</h3>
                 <div>
                     <div class="carrinho__info_frete__precos">
                         <p>PAC(6 dia(s) úteis)</p>
-                        <p>R$ 60,00</p>
+                        <i>R$ 60,00</i>
                     </div>
                     <div class="carrinho__info_frete__precos">
                         <p>PAC(6 dia(s) úteis)</p>
-                        <p>R$ 60,00</p>
+                        <i>R$ 60,00</i>
                     </div>
                     <div class="carrinho__info_frete__precos">
                         <p>PAC(6 dia(s) úteis)</p>
-                        <p>R$ 60,00</p>
+                        <i>R$ 60,00</i>
                     </div>
                 </div>
             </div>
             <div class="carrinho__info__totais">
-                <span>Subtotal R$ 60,00</span>
-                <span>Frete R$ 60,00</span>
-                <span>Desconto R$ 60,00</span>
-                <span>Total R$ 60,00</span>
+                <span>Subtotal <b>R$ 60,00</b> </span>
+                <span>Frete <b>R$ 60,00</b> </span>
+                <span>Desconto <b>R$ 60,00</b> </span>
+                <span>Total <b>R$ 60,00</b> </span>
             </div>
         </div>
         <div class="carrinho__btn">
-            <a href="" class="btn__bombom btn__continuar">Continuar Comprando</a>
-            <a href="" class="btn__bombom btn__finalizar">Finalizar</a>
+            <a href="#" class="btn__bombom btn__continuar btn__continuar_carrinho">
+                <img src="./disc/ico/c-cart-light.png">
+                Continuar Comprando
+            </a>
+            <a href="./login.html" class="btn__bombom btn__finalizar btn__finalizar_carrinho">
+                <img src="./disc/ico/c-lock.png">
+                Finalizar
+            </a>
         </div>
     </section>
-</body>
 
+    <footer class="footer">
+        <div class="footer__inner">
+            <div>
+                <h3>Site Seguro</h3>
+                <img src="./disc/img/logo-upcheckout.png" height="30">
+            </div>
+            <div>
+                <h3>Formas de Pagamento</h3>
+                <img src="./disc/img/pagseguro.png" height="30">
+                <img src="./disc/img/bandeiras.png" height="30">
+            </div>
+            <div>
+                <h3>Ajuda e Suporte</h3>
+                <a href="tel:+55999999999">(00) 0 0000-0000</a>
+                <a href="mailto:contato@sualoja.com">contato@sualoja.com</a>
+                <p>
+                    <b>Expediente:</b>
+                    de segunda a sexta das 9:00hs ás 17:00hs
+                    eceto feriados e comemorações
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div id="footer__info_loja">
+        CNPJ: xx.xxx.xxx/xxxx-xx  <br>
+        Razão Social: Loja de roupas LTDA <br>
+        Endereço; Rua das flores, Nº 12 - Centro - alias <br> <br>
+        &copy; 2019 Loja Virtual. Todos os direitos reservados. <br>
+        <div>
+            <img src="./disc/img/logo-upsite.png" height="50">
+            <img src="./disc/img/logo-box.png" height="50">
+        </div>
+    </div>
+
+</body>
 </html>

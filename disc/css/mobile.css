@@ -1,0 +1,18 @@
+.footer__inner {
+    grid-template-columns: repeat(1,1fr);
+}
+.mobile { display: block !important; }
+.desktop { display: none !important; }
+.carrinho__info {
+	grid-template-columns: repeat( 1, 1fr);
+}
+.carrinho__btn {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 0 20px;
+}
+.carrinho__produto__card {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
